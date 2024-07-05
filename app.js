@@ -4,7 +4,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const apiRouter = require('./router/router');
 
-mongoose.connect('mongodb://127.0.0.1:27017/MajeHiMaje')
+mongoose.connect('mongodb+srv://arjunpuri991:<password>@cluster0.m5zairw.mongodb.net/MajeHiMaje')
   .then(() => {
     console.log('Database is connected');
   })
