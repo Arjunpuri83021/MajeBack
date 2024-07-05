@@ -22,6 +22,9 @@ let storage = multer.diskStorage({
   });
 
 
+  router.get('/',(req,res)=>{
+    res.send("hello arjun")
+  })
 
 router.post("/postdata",upload.single('image'),cAPi.data)
 
