@@ -16,7 +16,9 @@ mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTop
   });
 
 // Apply CORS middleware before routes
-app.use(cors());
+app.use(cors({
+  origin: 'https://majefront-1.onrender.com', // Allow requests from this origin
+}));
 
 // Middleware to parse JSON and URL-encoded data
 app.use(express.urlencoded({ extended: false }));
