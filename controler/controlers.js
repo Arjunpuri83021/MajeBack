@@ -18,7 +18,6 @@ exports.data=async(req,res)=>{
 }catch(error){
     console.log("error in data post api",error)
 }
-    
 
 }
 
