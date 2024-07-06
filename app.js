@@ -17,10 +17,11 @@ mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTop
 
 // Apply CORS middleware before routes
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://majefront-1.onrender.com'], // Allow requests from these origins
+  origin: ['http://localhost:3000', 'https://majefront-1.onrender.com', 'https://your-netlify-domain.netlify.app'], // Include your Netlify domain
   methods: 'GET,POST,PUT,DELETE,OPTIONS',
   allowedHeaders: 'Content-Type,Authorization',
 }));
+
 
 // Middleware to parse JSON and URL-encoded data
 app.use(express.urlencoded({ extended: false }));
