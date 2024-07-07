@@ -17,7 +17,7 @@ mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTop
 
 // Apply CORS middleware before routes
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://your-netlify-domain.netlify.app', 'https://majeback.onrender.com'],
+  origin: ['http://localhost:3000', 'https://client-po52cy0hg-arjun-puris-projects.vercel.app', 'https://majeback.onrender.com'],
   methods: 'GET,POST,PUT,DELETE,OPTIONS',
   allowedHeaders: 'Content-Type,Authorization',
   credentials: true,
