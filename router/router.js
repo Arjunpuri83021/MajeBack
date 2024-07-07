@@ -23,7 +23,7 @@ let storage = multer.diskStorage({
 
 
   router.get('/',(req,res)=>{
-    res.send("hello arjun")
+    res.send("hello arjun puri goswami")
   })
 
 router.post("/postdata",cAPi.data)
